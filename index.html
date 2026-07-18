@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/all.css">
+    <script src="js/PetiteVue.js"></script>
+    <title>初心者傳說online</title>
+</head>
+
+<body>
+    <div class="main" id="app" @vue:mounted="mounted">
+        <!-- 類別選擇 -->
+        <div class="typeSel">
+            <ul>
+                <li v-for="item in typeList" :key="item.title" @click="chgType(item.num)"
+                    :class="{ on: type == item.num }">{{ item.title }}</li>
+            </ul>
+        </div>
+
+        <!-- 答題挑戰 -->
+        <div class="answerBox" v-if="answerList.length > 0 && type == 0">
+            <div class="filter">
+                <input type="text" v-model="keyword" placeholder="輸入關鍵字">
+                <div class="clear">清除</div>
+            </div>
+            <ul>
+                <li v-for="item in filterAnswer" :class="{ err: !item.answer }">
+                    <div class="question">{{ item.question }}</div>
+                    <div class="answer"> {{ item.answer ? 'O' : 'X' }}</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 地圖寶箱 -->
+        <div class="treasure" v-if="type == 2">
+            <img v-for="item in treasureList" :src="'images/' + item">
+        </div>
+    </div>
+    <script>
+        PetiteVue.createApp({
+            typeList: [
+                { num: 0, title: '答題挑戰' },
+                // { num: 1, title: '默契問答' },
+                { num: 2, title: '地圖寶箱' }
+            ],
+            treasureList: [
+                'D01.jpg',
+                'D02.jpg',
+                'D03.jpg',
+                'D04.jpg'
+            ],
+
+            type: 0,
+            keyword: "",
+            answerList: [],
+
+            chgType(num) {
+                this.type = num;
+                this.keyword = '';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            },
+            // 取得答題挑戰列表    
+            getAnswer() {
+                fetch('json/answer.json')
+                    .then(res => res.json())
+                    .then(data => {
+                        this.answerList = data;
+                    });
+            },
+            // 過濾答題挑戰列表
+            get filterAnswer() {
+                if (!this.keyword) {
+                    return this.answerList;
+                }
+
+                const key = this.keyword.trim().toLowerCase();
+                return this.answerList.filter(item => {
+                    return item.question.toLowerCase().includes(key);
+                });
+
+            },
+            mounted() {
+                this.getAnswer();
+            }
+
+        }).mount('#app');
+
+    </script>
+
+</body>
+
+</html>
