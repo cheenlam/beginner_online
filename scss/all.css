@@ -134,9 +134,10 @@ select {
 
 .typeSel {
   padding-bottom: 10px;
-  background-color: #f2f9ff;
+  background-color: rgba(242, 249, 255, 0.9);
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 .typeSel ul {
   padding: 10px;
