@@ -24,8 +24,8 @@
         <!-- 答題挑戰 -->
         <div class="answerBox" v-if="answerList.length > 0 && type == 0">
             <div class="filter">
-                <input type="text" v-model="keyword" placeholder="輸入關鍵字">
-                <div class="clear">清除</div>
+                <input type="text" v-model="answerKeyword" placeholder="輸入關鍵字">
+                <div class="clear" @click="answerKeyword = ''">清除</div>
             </div>
             <ul>
                 <li v-for="item in filterAnswer" :class="{ err: !item.answer }">
@@ -55,12 +55,12 @@
             ],
 
             type: 0,
-            keyword: "",
+            answerKeyword: "",
             answerList: [],
 
             chgType(num) {
                 this.type = num;
-                this.keyword = '';
+                this.answerKeyword = '';
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             },
             // 取得答題挑戰列表    
@@ -73,11 +73,11 @@
             },
             // 過濾答題挑戰列表
             get filterAnswer() {
-                if (!this.keyword) {
+                if (!this.answerKeyword) {
                     return this.answerList;
                 }
 
-                const key = this.keyword.trim().toLowerCase();
+                const key = this.answerKeyword.trim().toLowerCase();
                 return this.answerList.filter(item => {
                     return item.question.toLowerCase().includes(key);
                 });
