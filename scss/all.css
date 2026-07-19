@@ -105,6 +105,12 @@ img {
   vertical-align: middle;
 }
 
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
 .main {
   width: 450px;
   padding: 0 10px;
