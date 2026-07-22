@@ -227,13 +227,12 @@
     { "question": "陋室銘的作者是劉禹錫", "answer": true , "correct": "" },
     { "question": "學院課業每天都有5個委託", "answer": true , "correct": "" },
     { "question": "蒼耳的果實可以用來製作天然的癢癢粉", "answer": true , "correct": "" },
-
-
     { "question": "京劇裡的花臉一般扮演女性角色", "answer": false , "correct": "花臉一般扮演的是男性角色，女性角色主要由「旦行」來扮演" },
     { "question": "直接穿剛買回的衣服是沒問題的", "answer": false , "correct": "不建議，衣物在製造、運輸與展示過程中，可能會殘留化學藥劑" },
     { "question": "中國古代樂器編鐘一般是由黃銅製成的", "answer": false , "correct": "主要是由青銅鑄造而成" },
     { "question": "空調的風向朝上，製冷效果會更好", "answer": true , "correct": "" },
     { "question": "至理城中，奇怪的魔藥師是一位年輕人", "answer": false , "correct": "是一位白鬍子的長者" },
-    { "question": "鴨的叫聲不會產生回音", "answer": true , "correct": "" }
+    { "question": "鴨的叫聲不會產生回音", "answer": true , "correct": "" },
+    { "question": "推敲一詞源自詩人賈島的創作軼事", "answer": true , "correct": "" }
 
 ]
