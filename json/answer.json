@@ -84,7 +84,7 @@
     { "question": "河馬的汗液是無色的", "answer": false , "correct": "剛分泌時是透明的，接觸空氣氧化後會逐漸變成粉紅色，最後轉為深橘紅色" },
     { "question": "笑會增高壓力賀爾蒙", "answer": false , "correct": "笑會降低壓力荷爾蒙" },
     { "question": "技能書可以提升公會基礎技能等級", "answer": true , "correct": "" },
-    { "question": "【聖光列陣】羈絆有機率沉默對手", "answer": false , "correct": "???" },
+    { "question": "【聖光列陣】羈絆有機率沉默對手", "answer": false , "correct": "聖光列陣羈絆可獲得吸收攻擊的護盾" },
     { "question": "怪誕劇場活動，每日會開放三次", "answer": false , "correct": "不只三次" },
     { "question": "足球比賽中，球員被黃牌警告累計3次會被罰下", "answer": false , "correct": "累計2張黃牌，會立刻被主裁判出示驅逐出場" },
     { "question": "蚯蚓有眼睛", "answer": false , "correct": "蚯蚓沒有眼睛" },
@@ -173,7 +173,7 @@
     { "question": "人的舌頭對甜味最敏感的部位是舌尖", "answer": true , "correct": "" },
     { "question": "李煜是南唐倒數第二位國君", "answer": false , "correct": "是南唐的最後一位國君" },
     { "question": "把手機放在床頭充電會影響健康", "answer": true , "correct": "" },
-    { "question": "【虛空幻滅】羈絆有概率定身敵人", "answer": false , "correct": "???" },
+    { "question": "【虛空幻滅】羈絆有概率定身敵人", "answer": false , "correct": "虛空幻滅羈絆可獲得治療反噬傷害" },
     { "question": "古埃及人建造金字塔時，中國正處於商朝時期", "answer": false , "correct": "中國正處於傳說中的三皇五帝時期" },
     { "question": "人手中指的指甲長的最快的", "answer": true , "correct": "" },
     { "question": "缺少星魄時，可以向其他玩家聊天求救", "answer": true , "correct": "" },
@@ -209,9 +209,9 @@
     { "question": "儒勒凡爾納被譽為科幻小說之父", "answer": true , "correct": "" },
     { "question": "茶葉可以去除冰箱異味", "answer": true , "correct": "" },
     { "question": "歌劇【卡門】的女主角卡門是一名吉普賽女郎", "answer": true , "correct": "" },
-    { "question": "4次八連召喚可以啟動一次【超級八連】", "answer": false , "correct": "???" },
+    { "question": "4次八連召喚可以啟動一次【超級八連】", "answer": false , "correct": "要4次八連召喚後才能啟動" },
     { "question": "丈八蛇茅比青龍偃月刀重", "answer": false , "correct": "青龍偃月刀重82斤，丈八蛇矛重60斤" },
-    { "question": "【暗影之瞳】羈絆有概率提供護盾", "answer": false , "correct": "???" },
+    { "question": "【暗影之瞳】羈絆有概率提供護盾", "answer": false , "correct": "暗影之瞳羈絆可造成對方沉默效果" },
     { "question": "閃避成功時，玩家只能承受當次傷害的十分之一", "answer": true , "correct": "" },
     { "question": "人類的智力比身體衰老的慢", "answer": true , "correct": "" },
     { "question": "鍋莊舞是藏族的傳統舞蹈", "answer": true , "correct": "" },
@@ -226,5 +226,14 @@
     { "question": "被蚊蟲叮咬後，塗抹牙膏可以有效止癢", "answer": true , "correct": "" },
     { "question": "陋室銘的作者是劉禹錫", "answer": true , "correct": "" },
     { "question": "學院課業每天都有5個委託", "answer": true , "correct": "" },
-    { "question": "蒼耳的果實可以用來製作天然的癢癢粉", "answer": true , "correct": "" }
+    { "question": "蒼耳的果實可以用來製作天然的癢癢粉", "answer": true , "correct": "" },
+
+
+    { "question": "京劇裡的花臉一般扮演女性角色", "answer": false , "correct": "花臉一般扮演的是男性角色，女性角色主要由「旦行」來扮演" },
+    { "question": "直接穿剛買回的衣服是沒問題的", "answer": false , "correct": "不建議，衣物在製造、運輸與展示過程中，可能會殘留化學藥劑" },
+    { "question": "中國古代樂器編鐘一般是由黃銅製成的", "answer": false , "correct": "主要是由青銅鑄造而成" },
+    { "question": "空調的風向朝上，製冷效果會更好", "answer": true , "correct": "" },
+    { "question": "至理城中，奇怪的魔藥師是一位年輕人", "answer": false , "correct": "是一位白鬍子的長者" },
+    { "question": "鴨的叫聲不會產生回音", "answer": true , "correct": "" }
+
 ]
