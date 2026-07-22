@@ -243,6 +243,7 @@ select {
 .correctLog .inner {
   width: 300px;
   background-color: #dcdcf7;
+  box-shadow: -5px -5px 1px #48478f inset;
   position: relative;
   border-radius: 10px;
 }
