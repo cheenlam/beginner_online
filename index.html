@@ -41,7 +41,16 @@
             <div class="inner">
                 <div class="closeBtn" @click="correct.sw = false"></div>
                 <div class="tip">正解答案</div>
-                <div class="answer">{{ correct.content }}</div>
+                <div class="content">
+                    <label>
+                        <span>題目:</span>
+                        <p>{{ correct.question }}</p>
+                    </label>
+                    <label>
+                        <span>正解:</span>
+                        <p>{{ correct.answer }}</p>
+                    </label>
+                </div>
             </div>
         </div>
 
@@ -70,7 +79,8 @@
             answerList: [],
             correct: {
                 sw: false,
-                content: ''
+                question: '',
+                answer: ''
             },
 
             chgType(num) {
@@ -90,7 +100,8 @@
             openCorrect(data){
                 if(data.answer) return;
 
-                this.correct.content = data.correct;
+                this.correct.question = data.question;
+                this.correct.answer = data.correct;
                 this.correct.sw = true;
             },
             // 過濾答題挑戰列表

@@ -178,10 +178,24 @@ select {
         background-color: #48478f;
         border-radius: 10px 10px 0 0; 
     }
-    .answer{
+    .content {
         padding: 15px 10px 30px;
-        line-height: 18px;
+        label{
+            width: 100%;
+            display: inline-block;
+            & + label {
+                margin-top: 12px;
+            }
+        }
+        span{
+            padding-bottom: 3px;
+            font-weight: bold;
+        }
+        p{
+            color: rgb(170, 3, 3);
+        }
     }
+
 }
 
 
