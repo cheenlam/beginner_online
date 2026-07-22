@@ -231,6 +231,9 @@ select {
   z-index: 20;
   transition: opacity 0.5s;
 }
+.correctLog.on .inner {
+  animation: correctLog 0.5s 0s linear;
+}
 .correctLog .closeBg {
   width: 100%;
   height: 100%;
@@ -246,6 +249,20 @@ select {
   box-shadow: -5px -5px 1px #48478f inset;
   position: relative;
   border-radius: 10px;
+}
+@keyframes correctLog {
+  0% {
+    transform: translateY(0px) scale(0);
+  }
+  25% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
 }
 .correctLog .closeBtn {
   width: 30px;
