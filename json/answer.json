@@ -233,6 +233,8 @@
     { "question": "空調的風向朝上，製冷效果會更好", "answer": true , "correct": "" },
     { "question": "至理城中，奇怪的魔藥師是一位年輕人", "answer": false , "correct": "是一位白鬍子的長者" },
     { "question": "鴨的叫聲不會產生回音", "answer": true , "correct": "" },
-    { "question": "推敲一詞源自詩人賈島的創作軼事", "answer": true , "correct": "" }
-
+    { "question": "推敲一詞源自詩人賈島的創作軼事", "answer": true , "correct": "" },
+    { "question": "白色物體可以反射所有色光", "answer": true , "correct": "" },
+    { "question": "所有細菌對人類都有害", "answer": false , "correct": "絕大多數的細菌對人類不但無害，反而非常重要，只有少數會讓人們生病" },
+    { "question": "打火機比火柴更早被發明", "answer": true , "correct": "" }
 ]
